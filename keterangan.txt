@@ -1,0 +1,25 @@
+Status tu aktif 
+1.aktif
+2.tidak aktif
+
+role :
+1.aslab
+2.kordas
+3.kalab
+4.praktikan
+5.peminjam
+
+Praktikum :
+1.Rangkaian Logika Teknik Digital
+2.microprosessor
+3.microcontroller
+
+da prank tolong buek an :
+1. RUD praktikan
+2.CRUD role
+3.CRUD status
+4.CRUD jadwal
+5.CRUD matakuliah
+6.RUD jadwal _User
+
+dihalaman Admin
