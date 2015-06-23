@@ -12,8 +12,8 @@
       $kelompok=$row['jadwal_nama'];
     }
 
-    $praktikan ="SELECT user.nim,user.nama,user.no_telepon FROM kelompok join jadwal_user join user on kelompok.jadwal_id=jadwal_user.jadwal_id and jadwal_user.username=user.username where kelompok.jadwal_id='$kelompok_id'";
-    $praktikan1=mysql_query($praktikan);
+    $user ="SELECT user.nim,user.nama,user.no_telepon FROM kelompok join jadwal_user join user on kelompok.jadwal_id=jadwal_user.jadwal_id and jadwal_user.username=user.username where kelompok.jadwal_id='$kelompok_id'";
+    $user1=mysql_query($user);
   }
   else
   {
@@ -34,7 +34,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>LTEI </title>
+<title>LEI </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -48,7 +48,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <nav>
       <ul>
-        <li><a href="#">mendaftar sebagai peminjam</a></li>
+        <li><a href="daftarpeminjam.php">mendaftar sebagai peminjam</a></li>
         <li><a href="#">Login Peminjam</a></li>
         <li><a href="#">Login Aslab</a></li>
         <li><a href="#">Login Kalab</a></li>
@@ -64,18 +64,10 @@ Licence URI: http://www.os-templates.com/template-terms
   <header id="header" class="clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-      <h1><a href="index.html">Laboratorium Elektronika Industri</a></h1>
+      <h1><a href="admin.html">Laboratorium Elektronika Industri</a></h1>
       <p>Teknik Elektro,Universitas Andalas</p>
     </div>
-    <div class="fl_right">
-      <form class="clear" method="post" action="#">
-        <fieldset>
-          <legend>Search:</legend>
-          <input type="text" value="" placeholder="Search Here">
-          <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
-        </fieldset>
-      </form>
-    </div>
+>
     <!-- ################################################################################################ --> 
   </header>
 </div>
@@ -87,7 +79,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <nav id="mainav" class="clear"> 
       <!-- ################################################################################################ -->
       <ul class="clear">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="admin.html">Home</a></li>
         <li><a class="drop" href="#">Inventaris</a>
           <ul>
             <li><a href="perkakas.php">Perkakas</a></li>
@@ -102,8 +94,8 @@ Licence URI: http://www.os-templates.com/template-terms
           <ul>
             <li><a href="pendaftaranpraktikum.php">Pendaftaran</a></li>
             <li><a href="kelompok.php">Kelompok</a></li>
-            <li><a href="nilai.php">Nilai</a></li>
-            <li><a href="inputnilai.php">Input Nilai</a></li>
+            <li><a href="tampilnilai.php">Nilai</a></li>
+            <li><a href="nilai.php">Input Nilai</a></li>
           </ul>
         </li>
         <li><a class="drop" href="#">Laporan</a>
@@ -149,7 +141,7 @@ Licence URI: http://www.os-templates.com/template-terms
              <th>Telepon</th> 
            </tr>
            <?php
-           while ($row=mysql_fetch_assoc($praktikan1)) {
+           while ($row=mysql_fetch_assoc($user1)) {
               echo "<tr>";
               echo "<td>".$row["nim"]."</td>";
               echo "<td>".$row["nama"]."</td>";

@@ -8,7 +8,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>LTEI </title>
+<title>LEI </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -22,10 +22,10 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <nav>
       <ul>
-        <li><a href="#">mendaftar sebagai peminjam</a></li>
-        <li><a href="#">Login Peminjam</a></li>
-        <li><a href="#">Login Aslab</a></li>
-        <li><a href="#">Login Kalab</a></li>
+        <li><a href="daftarpeminjam.php">mendaftar sebagai peminjam</a></li>
+        <li><a href="loginpinjam.php">Login Peminjam</a></li>
+        <li><a href="login.php">Login Aslab</a></li>
+        <li><a href="login.php">Login Kalab</a></li>
       </ul>
     </nav>
     <!-- ################################################################################################ --> 
@@ -41,15 +41,7 @@ Licence URI: http://www.os-templates.com/template-terms
       <h1><a href="#">Laboratorium Elektronika Industri</a></h1>
       <p>Teknik Elektro,Universitas Andalas</p>
     </div>
-    <div class="fl_right">
-      <form class="clear" method="post" action="#">
-        <fieldset>
-          <legend>Search:</legend>
-          <input type="text" value="" placeholder="Search Here">
-          <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
-        </fieldset>
-      </form>
-    </div>
+
     <!-- ################################################################################################ --> 
   </header>
 </div>
@@ -60,8 +52,8 @@ Licence URI: http://www.os-templates.com/template-terms
   <div class="rounded">
     <nav id="mainav" class="clear"> 
       <!-- ################################################################################################ -->
-       <ul class="clear">
-        <li class="active"><a href="index.html">Home</a></li>
+      <ul class="clear">
+        <li class="active"><a href="index.php">Home</a></li>
         <li><a class="drop" href="#">Inventaris</a>
           <ul>
             <li><a href="perkakas.php">Perkakas</a></li>
@@ -76,18 +68,10 @@ Licence URI: http://www.os-templates.com/template-terms
           <ul>
             <li><a href="pendaftaranpraktikum.php">Pendaftaran</a></li>
             <li><a href="kelompok.php">Kelompok</a></li>
-            <li><a href="nilai.php">Nilai</a></li>
-            <li><a href="inputnilai.php">Input Nilai</a></li>
+            <li><a href="tampilnilai.php">Nilai</a></li>
+            <li><a href="nilai.php">Input Nilai</a></li>
           </ul>
         </li>
-        <li><a class="drop" href="#">Laporan</a>
-          <ul>
-            <li><a href="lpraktikum.php">Laporan Praktikum</a></li>
-            <li><a href="linventaris.php">Laporan Inventaris</a></li>
-            <li><a href="lpeminjaman.php">Laporan Peminjaman</a></li>
-          </ul>
-        </li>        
-        <li><a href="#">Profil</a></li>
       </ul>
       <!-- ################################################################################################ --> 
     </nav>
@@ -106,44 +90,23 @@ Licence URI: http://www.os-templates.com/template-terms
     <main class="container clear"> 
       <!-- main body --> 
         <center>
-          <form id="formku">
+          <b> Pilih Matakuliah </b>
+          <br><br>
+          <form action='pilihkelpk3.php' method='POST'>
             <table align="center">
               <tr>
-                <td> Matakuliah</td>
+                <td> Jenis Praktikum</td>
                 <td>
-                  <select name="matakuliah">
-                    <option value="1"> matakuliah 1</option>
-                    <option value="2"> matakuliah 2</option>
-                    <option value="3"> matakuliah 3</option>
+                  <select name="jenispraktikum">
+                    <option value="1"> Rangkaian Logika Teknik Digital</option>
+                    <option value="2"> Microprosessor</option>
+                    <option value="3"> Microcontroller</option>
                   </select>
                 </td>
-              </tr>
-              <tr>
-                <td> kelompok</td>
-                <td>
-                  <select name="kelompok">
-                    <option value="1"> kelompok 1</option>
-                    <option value="2"> kelompok 2</option>
-                    <option value="3"> kelompok 3</option>
-                  </select>
-                </td>
-              </tr>
-              <tr>
-                <td> modul</td>
-                <td>
-                  <select name="modul">
-                    <option value="1"> modul 1</option>
-                    <option value="2"> modul 2</option>
-                    <option value="3"> modul 3</option>
-                  </select>
-                </td>
-              </tr>
-                
             </table>
-            <input type="submit" value="Print" class="btn" align="left">
+            <input type="submit" value="submit" >
           </form>
         </center>
-      
       <!-- / main body -->
       <div class="clear"></div>
     </main>

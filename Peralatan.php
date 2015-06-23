@@ -15,9 +15,9 @@
     <!-- ################################################################################################ -->
     <nav>
       <ul>
-        <li><a href="#">mendaftar sebagai peminjam</a></li>
-        <li><a href="#">Login Peminjam</a></li>
-        <li><a href="#">Login Aslab</a></li>
+        <li><a href="daftarpeminjam.php">mendaftar sebagai peminjam</a></li>
+        <li><a href="loginpeminjam.php">Login Peminjam</a></li>
+        <li><a href="login.php">Login Aslab</a></li>
         <li><a href="#">Login Kalab</a></li>
       </ul>
     </nav>
@@ -54,7 +54,7 @@
     <nav id="mainav" class="clear"> 
       <!-- ################################################################################################ -->
       <ul class="clear">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="index.php">Home</a></li>
         <li><a class="drop" href="#">Inventaris</a>
           <ul>
             <li><a href="perkakas.php">Perkakas</a></li>

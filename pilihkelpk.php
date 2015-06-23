@@ -22,7 +22,7 @@ Licence URI: http://www.os-templates.com/template-terms
 -->
 <html>
 <head>
-<title>LTEI </title>
+<title>LEI </title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -36,9 +36,9 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <nav>
       <ul>
-        <li><a href="#">mendaftar sebagai peminjam</a></li>
-        <li><a href="#">Login Peminjam</a></li>
-        <li><a href="#">Login Aslab</a></li>
+        <li><a href="daftarpeminjam.php">mendaftar sebagai peminjam</a></li>
+        <li><a href="loginpeminjam.php">Login Peminjam</a></li>
+        <li><a href="login.php">Login Aslab</a></li>
         <li><a href="#">Login Kalab</a></li>
       </ul>
     </nav>
@@ -52,18 +52,10 @@ Licence URI: http://www.os-templates.com/template-terms
   <header id="header" class="clear"> 
     <!-- ################################################################################################ -->
     <div id="logo" class="fl_left">
-      <h1><a href="index.html">Laboratorium Elektronika Industri</a></h1>
+      <h1><a href="index.php">Laboratorium Elektronika Industri</a></h1>
       <p>Teknik Elektro,Universitas Andalas</p>
     </div>
-    <div class="fl_right">
-      <form class="clear" method="post" action="#">
-        <fieldset>
-          <legend>Search:</legend>
-          <input type="text" value="" placeholder="Search Here">
-          <button class="fa fa-search" type="submit" title="Search"><em>Search</em></button>
-        </fieldset>
-      </form>
-    </div>
+
     <!-- ################################################################################################ --> 
   </header>
 </div>
@@ -75,7 +67,7 @@ Licence URI: http://www.os-templates.com/template-terms
     <nav id="mainav" class="clear"> 
       <!-- ################################################################################################ -->
       <ul class="clear">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="index.php">Home</a></li>
         <li><a class="drop" href="#">Inventaris</a>
           <ul>
             <li><a href="perkakas.php">Perkakas</a></li>
@@ -90,8 +82,8 @@ Licence URI: http://www.os-templates.com/template-terms
           <ul>
             <li><a href="pendaftaranpraktikum.php">Pendaftaran</a></li>
             <li><a href="kelompok.php">Kelompok</a></li>
-            <li><a href="nilai.php">Nilai</a></li>
-            <li><a href="inputnilai.php">Input Nilai</a></li>
+            <li><a href="tampilnilai.php">Nilai</a></li>
+            <li><a href="nilai.php">Input Nilai</a></li>
           </ul>
         </li>
         <li><a class="drop" href="#">Laporan</a>
@@ -100,8 +92,7 @@ Licence URI: http://www.os-templates.com/template-terms
             <li><a href="linventaris.php">Laporan Inventaris</a></li>
             <li><a href="lpeminjaman.php">Laporan Peminjaman</a></li>
           </ul>
-        </li>        
-        <li><a href="#">Profil</a></li>
+        </li>
       </ul>
       <!-- ################################################################################################ --> 
     </nav>

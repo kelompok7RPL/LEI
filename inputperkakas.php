@@ -89,7 +89,8 @@ if(isset($_GET['pesan']))
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
 					<ul class="nav pull-right">
-
+						
+											
 						<!-- start: User Dropdown -->
 						<li class="dropdown">
 							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
@@ -101,7 +102,7 @@ if(isset($_GET['pesan']))
  									<span>Account Settings</span>
 								</li>
 								<li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-								<li><a href="login.html"><i class="halflings-icon off"></i> Logout</a></li>
+								<li><a href="login.php"><i class="halflings-icon off"></i> Logout</a></li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->
@@ -121,32 +122,37 @@ if(isset($_GET['pesan']))
 			<div id="sidebar-left" class="span2">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li><a href="#"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
+						<li><a href="admin.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
 						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Praktikum</span></a>
+							<a class="dropmenu" href="#"><i class="icon-star"></i><span class="hidden-tablet"> Praktikum</span></a>
 							<ul>
-								<li><a class="submenu" href="praktikan.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Praktikan</span></a></li>
-								<li><a class="submenu" href="jadwal.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Jadwal</span></a></li>
-								<li><a class="submenu" href="kelompok.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Kelompok</span></a></li>
-								<li><a class="submenu" href="matakuliah.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Matakuliah</span></a></li>
+								<li><a class="submenu" href="praktikan.php"><i class="icon-user"></i><span class="hidden-tablet"> Praktikan</span></a></li>
+								<li><a class="submenu" href="jadwal.php"><i class="icon-time"></i><span class="hidden-tablet"> Jadwal</span></a></li>
+								<li><a class="submenu" href="adminkelompok.php"><i class="icon-group"></i><span class="hidden-tablet"> Kelompok</span></a></li>
 							</ul>	
 						</li>
 						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Inventaris </span></a>
+							<a class="dropmenu" href="#"><i class="icon-briefcase"></i><span class="hidden-tablet"> Inventaris </span></a>
 							<ul>
-								<li><a class="submenu" href="inputperkakas.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Perkakas </span></a></li>
-								<li><a class="submenu" href="inputkomponen.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Komponen </span></a></li>
-								<li><a class="submenu" href="inputbuku.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Buku </span></a></li>
-								<li><a class="submenu" href="inputATK.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Alat Tulis Kantor </span></a></li>
-								<li><a class="submenu" href="jenis_peralatan.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Jenis Peralatan </span></a></li>
-								<li><a class="submenu" href="peminjam.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Peminjam </span></a></li>
+								<li><a class="submenu" href="inputperkakas.php"><i class="icon-wrench"></i><span class="hidden-tablet"> Perkakas </span></a></li>
+								<li><a class="submenu" href="inputkomponen.php"><i class="icon-cog"></i><span class="hidden-tablet"> Komponen </span></a></li>
+								<li><a class="submenu" href="inputbuku.php"><i class="icon-book"></i><span class="hidden-tablet"> Buku </span></a></li>
+								<li><a class="submenu" href="inputATK.php"><i class="icon-pencil"></i><span class="hidden-tablet"> Alat Tulis Kantor </span></a></li>
+								<li><a class="submenu" href="Peminjam.php"><i class="icon-user"></i><span class="hidden-tablet"> Peminjam </span></a></li>
 							</ul>	
 						</li>
-						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Administrasi  </span></a>
+						<li><a class="dropmenu" href="#"><i class="icon-file"></i><span class="hidden-tablet">Laporan</span></a>
 							<ul>
-								<li><a class="submenu" href="role.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Role </span></a></li>
-								<li><a class="submenu" href="status.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Status </span></a></li>
+								<li><a class="submenu" href="lpraktikum1.php"><i class="icon-star"></i><span class="hidden-tablet"> Praktikum </span></a></li>
+								<li><a class="submenu" href="linventaris1.php"><i class="icon-briefcase"></i><span class="hidden-tablet"> Inventaris </span></a></li>
+								<li><a class="submenu" href="lpeminjaman1.php"><i class="icon-user"></i><span class="hidden-tablet"> Peminjaman </span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="dropmenu" href="#"><i class="icon-user"></i><span class="hidden-tablet"> Pengurus  </span></a>
+							<ul>
+								<li><a class="submenu" href="aslab.php"><i class="icon-user"></i><span class="hidden-tablet"> Aslab </span></a></li>
+								<li><a class="submenu" href="kalab.php"><i class="icon-user"></i><span class="hidden-tablet"> Kalab </span></a></li>
 
 							</ul>	
 						</li>
@@ -169,30 +175,44 @@ if(isset($_GET['pesan']))
 				<ul class="breadcrumb">
 					<li>
 						<i class="icon-home"></i>
-						<a href="#">Home</a> 
+						<a href="admin.html">Home</a> 
 						<i class="icon-angle-right"></i>
 					</li>
-					<li><a href="#">Perkakas</a></li>
+					<li>
+					<i class="icon-wrench"></i>
+					<a href="#">Perkakas</a></li>
+					
 				</ul>
+				
 
 				<!-- judul -->
 				<center>
 				<H1> Daftar Perkakas</H1>
 				</center>
 				<!-- akhir judul -->
-				 <a href='tambahperkakas.php'><button type="submit" class="btn btn-success">Tambah Data Perkakas</button></a><br><br>
+				<a href='tambahperkakas.php'><button type="submit" class="btn btn-success icon-plus"> Tambah Data Perkakas</button></a><br><br>
 				<!-- tabel -->
-				<table border="3" class="table table-hover" align="center">
+				<div class="row-fluid sortable">		
+				<div class="box span12">
+					<div class="box-header" data-original-title>
+						<h2><i class="halflings-icon wrench"></i><span class="break"></span>Perkakas</h2>
+						<div class="box-icon">
+							<a href="#" class="btn-minimize"><i class="halflings-icon chevron-up"></i></a>
+						</div>
+					</div>
+					<div class="box-content">
 					
-					<th style="text-align:center">Nama</th>
-					<th style="text-align:center">Baik</th>
-					<th style="text-align:center">Rusak Ringan</th>
-					<th style="text-align:center">Rusak Berat</th>
-					<th style="text-align:center">Total</th>					
-					<th style="text-align:center">Aksi</th></tr>
-				
-
-				<?php
+						<table class="table table-striped table-bordered bootstrap-datatable datatable">
+							<thead>
+							  
+									<th style="text-align:center">Nama</th>
+									<th style="text-align:center">Baik</th>
+									<th style="text-align:center">Rusak Ringan</th>
+									<th style="text-align:center">Rusak Berat</th>
+									<th style="text-align:center">Total</th>					
+									<th style="text-align:center">Aksi</th>
+							</thead><tbody>
+								<?php
                     while($row = mysql_fetch_assoc($result))
                     {
                             echo "<tr>";
@@ -205,9 +225,9 @@ if(isset($_GET['pesan']))
                                                    
                             echo "	<td style='text-align:center'>"; 
 							
-							echo "<a href='updateperkakas.php?id=".$row['peralatan_id']."'><button type='submit' class='btn btn-primary'>Update</button></a>";
+							echo "<a href='updateperkakas.php?id=".$row['peralatan_id']."'><button type='submit' class='btn btn-primary icon-edit'> Update</button></a>";
 							?>
-							<a onclick="return confirm('Apakah anda yakin?')" href='inputperkakas.php?id=<?PHP echo $row['peralatan_id']?>'><button type='submit' class='btn btn-danger'>Hapus</button></a></td>
+							<a onclick="return confirm('Apakah anda yakin?')" href='inputperkakas.php?id=<?PHP echo $row['peralatan_id']?>'><button type='submit' class="btn btn-danger icon-trash" > Delete</button></a></td>
 							<?PHP
 							echo "</tr>";
                     }
@@ -216,7 +236,12 @@ if(isset($_GET['pesan']))
                     }
                     ?>
 
-                    </table>
+							
+																					
+							
+						  </tbody>
+					  </table>            
+					</div>
 				<!-- akhir tabel -->
 
 			<!-- end: Content -->

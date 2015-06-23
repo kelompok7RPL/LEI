@@ -18,7 +18,7 @@ if (isset($_GET['id']))
 		$email = $row['email'];
 		$no_telepon = $row['no_telepon'];
 	    $status_nama=$row['status_nama'];
-	    $gambar="<img src=\"".$row['KRS']."\" ' width='200px' height='200px'/>"; 
+	    $gambar="<img src=\"".$row['KRS']."\" ' width='700px' height='700px'/>"; 
 	}
 	else
 	{
@@ -86,7 +86,7 @@ else
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</a>
-				<a class="brand" href="index.html"><span>Laboratorium Elektronika Industri</span></a>
+				<a class="brand" href="#"><span>Laboratorium Elektronika Industri</span></a>
 								
 				<!-- start: Header Menu -->
 				<div class="nav-no-collapse header-nav">
@@ -103,7 +103,7 @@ else
  									<span>Account Settings</span>
 								</li>
 								<li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-								<li><a href="login.html"><i class="halflings-icon off"></i> Logout</a></li>
+								<li><a href="login.php"><i class="halflings-icon off"></i> Logout</a></li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->
@@ -123,32 +123,37 @@ else
 			<div id="sidebar-left" class="span2">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li><a href="index.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
+						<li><a href="admin.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
 						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Praktikum</span><span class="label label-important"> 4 </span></a>
+							<a class="dropmenu" href="#"><i class="icon-star"></i><span class="hidden-tablet"> Praktikum</span></a>
 							<ul>
-								<li><a class="submenu" href="praktikan.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> praktikan</span></a></li>
-								<li><a class="submenu" href="jadwal.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> jadwal</span></a></li>
-								<li><a class="submenu" href="kelompok.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> kelompok</span></a></li>
-								<li><a class="submenu" href="matakuliah.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> matakuliah</span></a></li>
+								<li><a class="submenu" href="praktikan.php"><i class="icon-user"></i><span class="hidden-tablet"> Praktikan</span></a></li>
+								<li><a class="submenu" href="jadwal.php"><i class="icon-time"></i><span class="hidden-tablet"> Jadwal</span></a></li>
+								<li><a class="submenu" href="adminkelompok.php"><i class="icon-group"></i><span class="hidden-tablet"> Kelompok</span></a></li>
 							</ul>	
 						</li>
 						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Inventaris </span><span class="label label-important"> 6 </span></a>
+							<a class="dropmenu" href="#"><i class="icon-briefcase"></i><span class="hidden-tablet"> Inventaris </span></a>
 							<ul>
-								<li><a class="submenu" href="perkakas.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Perkakas </span></a></li>
-								<li><a class="submenu" href="komponen.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> komponen </span></a></li>
-								<li><a class="submenu" href="buku.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> buku </span></a></li>
-								<li><a class="submenu" href="ATK.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Alat Tulis Kantor </span></a></li>
-								<li><a class="submenu" href="jenis_peralatan.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Jenis_peralatan </span></a></li>
-								<li><a class="submenu" href="peminjam.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> peminjam </span></a></li>
+								<li><a class="submenu" href="inputperkakas.php"><i class="icon-wrench"></i><span class="hidden-tablet"> Perkakas </span></a></li>
+								<li><a class="submenu" href="inputkomponen.php"><i class="icon-cog"></i><span class="hidden-tablet"> Komponen </span></a></li>
+								<li><a class="submenu" href="inputbuku.php"><i class="icon-book"></i><span class="hidden-tablet"> Buku </span></a></li>
+								<li><a class="submenu" href="inputATK.php"><i class="icon-pencil"></i><span class="hidden-tablet"> Alat Tulis Kantor </span></a></li>
+								<li><a class="submenu" href="Peminjam.php"><i class="icon-user"></i><span class="hidden-tablet"> Peminjam </span></a></li>
 							</ul>	
 						</li>
-						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Administrasi  </span><span class="label label-important"> 2 </span></a>
+						<li><a class="dropmenu" href="#"><i class="icon-file"></i><span class="hidden-tablet">Laporan</span></a>
 							<ul>
-								<li><a class="submenu" href="role.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Role </span></a></li>
-								<li><a class="submenu" href="status.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Status </span></a></li>
+								<li><a class="submenu" href="lpraktikum1.php"><i class="icon-star"></i><span class="hidden-tablet"> Praktikum </span></a></li>
+								<li><a class="submenu" href="linventaris.php"><i class="icon-briefcase"></i><span class="hidden-tablet"> Inventaris </span></a></li>
+								<li><a class="submenu" href="lpeminjaman1.php"><i class="icon-user"></i><span class="hidden-tablet"> Peminjaman </span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="dropmenu" href="#"><i class="icon-user"></i><span class="hidden-tablet"> Pengurus  </span></a>
+							<ul>
+								<li><a class="submenu" href="aslab.php"><i class="icon-user"></i><span class="hidden-tablet"> Aslab </span></a></li>
+								<li><a class="submenu" href="kalab.php"><i class="icon-user"></i><span class="hidden-tablet"> Kalab </span></a></li>
 
 							</ul>	
 						</li>
@@ -171,22 +176,29 @@ else
 			<ul class="breadcrumb">
 				<li>
 					<i class="icon-home"></i>
-					<a href="index.html">Home</a> 
+					<a href="admin.html">Home</a> 
 					<i class="icon-angle-right"></i>
 				</li>
-				<li><a href="#">Dashboard</a></li>
+				<li>
+				<i class="icon-user"></i>
+				<a href="praktikan.php">Praktikan</a></li>
+				<i class="icon-angle-right"></i>
+				<li>
+				<i class="icon-search"></i>
+				<a href="#">Detail</a></li>
 			</ul>
 
-
-
-
+			<center>
+				<H1> Detail Data Praktikan</H1><br>
+			
+			
 			<h1>
 				<?php echo $nama?>
 			</h1>
-		
+			</center>
 
 
-        <div style="float: left">
+        <div><center>
 			<table>
 				<tr>
 					<td>Username</td>
@@ -219,16 +231,19 @@ else
 					<td><?php echo $status_nama ?> </td>
 				</tr>
 
-                <tr> <td>   <a class="btn btn-primary"  href='praktikan.php?id=<?php echo $username?>'>Delete</a> 
-	                		<a class="btn btn-primary"  href='aktivasiprak.php?id=<?php echo $username?>'>Aktifkan</a> 
-	                		<a class="btn btn-primary"  href='nonaktivasiprak.php?id=<?php echo $username?>'>Non-aktif</a> 
+                <tr> 
+				<td>   
+							<a onclick="return confirm('Apakah anda yakin?')" class="btn btn-danger icon-trash" href='praktikan.php?id=<?php echo $username?>'> Delete</a> 
+	                		<a class="btn btn-success icon-ok"  href='aktivasiprak.php?id=<?php echo $username?>'> Aktifkan</a> 
+	                		<a class="btn btn-warning icon-remove"  href='nonaktivasiprak.php?id=<?php echo $username?>'> Non-aktif</a> 
 
                 </td></tr>
-        </table>
+        </table></center>
          </div>
          <div style="float: right" >
             <?php echo $gambar ?>   
         </div>
+		</center>
 
                 
                
@@ -253,15 +268,6 @@ else
 	</div>
 	
 	<div class="clearfix"></div>
-	
-	<footer>
-
-		<p>
-			<span style="text-align:left;float:left">&copy; 2013 <a href="http://jiji262.github.io/Bootstrap_Metro_Dashboard/" alt="Bootstrap_Metro_Dashboard">Bootstrap Metro Dashboard</a></span>
-			
-		</p>
-
-	</footer>
 	
 	<!-- start: JavaScript-->
 

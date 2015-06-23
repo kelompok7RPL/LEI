@@ -36,9 +36,9 @@ Licence URI: http://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <nav>
       <ul>
-        <li><a href="#">mendaftar sebagai peminjam</a></li>
-        <li><a href="#">Login Peminjam</a></li>
-        <li><a href="#">Login Aslab</a></li>
+        <li><a href="daftarpeminjam.php">mendaftar sebagai peminjam</a></li>
+        <li><a href="loginpeminjam.php">Login Peminjam</a></li>
+        <li><a href="login.php">Login Aslab</a></li>
         <li><a href="#">Login Kalab</a></li>
       </ul>
     </nav>

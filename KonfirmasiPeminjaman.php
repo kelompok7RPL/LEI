@@ -54,7 +54,7 @@
     <nav id="mainav" class="clear"> 
       <!-- ################################################################################################ -->
       <ul class="clear">
-        <li class="active"><a href="index.html">Home</a></li>
+        <li class="active"><a href="index.php">Home</a></li>
         <li><a class="drop" href="#">Inventaris</a>
           <ul>
             <li><a href="perkakas.php">Perkakas</a></li>

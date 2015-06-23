@@ -10,7 +10,6 @@
                             $nama = $_POST['Nama'];
                             $email = $_POST['email'];
                             $no_telepon = $_POST['no_telepon']; 
-                            $alamat = $_POST['Alamat'];
                             $role_id = $_POST['role_id'];
                             $kelompok_id=$_POST['kelompok_id'];
 
@@ -69,11 +68,11 @@
                             }
 
                         
-                    if ($sql1 ){
-                    header("location:pendaftaranpraktikum.php?pesan=1&isi=Berhasil Menambahkan Aslab");
-                    }else{
-                    header("location:pendaftaranpraktikum.php?pesan=1&isi=gagal Menambahkan Aslab");
-                    }
+                    // if ($sql1 ){
+                    // header("location:pendaftaranpraktikum.php?pesan=1&isi=Berhasil Menambahkan Aslab");
+                    // }else{
+                    // header("location:pendaftaranpraktikum.php?pesan=1&isi=gagal Menambahkan Aslab");
+                    // }
 
                  }
                  else

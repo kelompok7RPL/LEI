@@ -431,3 +431,56 @@ table a, #comments a{background-color:inherit;}
 	.scrollable{display:block; width:100%; margin:0 0 30px 0; padding:0 0 15px 0; overflow:auto; overflow-x:scroll;}
 	.scrollable table{margin:0; padding:0; white-space:nowrap;}
 }
+/********************************************/
+#kotak{
+    width: 520px;
+    height: 250px;
+    background: #fff;
+    margin: 150px auto 100px auto;
+    color:#000;
+}
+#atas{
+    height: 35px;
+    width: 520px;
+    text-align: center;
+    font-size: 15pt;
+    padding-top:20px;
+}
+#bawah{
+    height: 200px;
+    width: 520px;
+    
+}
+.masuk{
+    width: 400px;
+    height:40px;
+    margin-top:10px;
+    margin-left: 60px;
+    font-size: 12pt;
+    border: 1px solid #51AEE0;
+    padding-left:10px;
+    color:#51AEE0;
+}
+.masuk:focus{
+    width: 400px;
+    height:40px;
+    margin-top:10px;
+    margin-left: 60px;
+    font-size: 12pt;
+    padding-left:10px;
+    color:#1ABC9C;
+    outline: none;
+    box-shadow: 0 0 5px #51AEE0;
+}
+ 
+#tombol{
+    width: 400px;
+    height:40px;
+    margin-top:10px;
+    margin-left: 60px;
+    background: #51AEE0;
+    border:none;
+    color:#fff;
+    font-size: 14pt;
+    outline:none;
+}

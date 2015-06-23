@@ -21,11 +21,11 @@
 							
                             if ($masuk )
 							{
-							header("location:inputkomponen.php?pesan=1&isi=Berhasil Memperbarui Data");
+							header("location:inputkomponen.php?pesan=1&isi");
 							}
 							else
 							{
-							header("location:updatekomponen.php?pesan=1&isi=Gagal Memperbarui Data");
+							header("location:updatekomponen.php?pesan=1&isi");
 							}                                                      
 					} 
                                
@@ -107,7 +107,7 @@
  									<span>Account Settings</span>
 								</li>
 								<li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-								<li><a href="login.html"><i class="halflings-icon off"></i> Logout</a></li>
+								<li><a href="login.php"><i class="halflings-icon off"></i> Logout</a></li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->
@@ -127,32 +127,37 @@
 			<div id="sidebar-left" class="span2">
 				<div class="nav-collapse sidebar-nav">
 					<ul class="nav nav-tabs nav-stacked main-menu">
-						<li><a href="#"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
+						<li><a href="admin.html"><i class="icon-bar-chart"></i><span class="hidden-tablet"> Dashboard</span></a></li>	
 						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Praktikum</span></a>
+							<a class="dropmenu" href="#"><i class="icon-star"></i><span class="hidden-tablet"> Praktikum</span></a>
 							<ul>
-								<li><a class="submenu" href="praktikan.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Praktikan</span></a></li>
-								<li><a class="submenu" href="jadwal.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Jadwal</span></a></li>
-								<li><a class="submenu" href="kelompok.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Kelompok</span></a></li>
-								<li><a class="submenu" href="matakuliah.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Matakuliah</span></a></li>
+								<li><a class="submenu" href="praktikan.php"><i class="icon-user"></i><span class="hidden-tablet"> Praktikan</span></a></li>
+								<li><a class="submenu" href="jadwal.php"><i class="icon-time"></i><span class="hidden-tablet"> Jadwal</span></a></li>
+								<li><a class="submenu" href="adminkelompok.php"><i class="icon-group"></i><span class="hidden-tablet"> Kelompok</span></a></li>
 							</ul>	
 						</li>
 						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Inventaris </span></a>
+							<a class="dropmenu" href="#"><i class="icon-briefcase"></i><span class="hidden-tablet"> Inventaris </span></a>
 							<ul>
-								<li><a class="submenu" href="inputperkakas.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Perkakas </span></a></li>
-								<li><a class="submenu" href="inputkomponen.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Komponen </span></a></li>
-								<li><a class="submenu" href="inputbuku.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Buku </span></a></li>
-								<li><a class="submenu" href="inputATK.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Alat Tulis Kantor </span></a></li>
-								<li><a class="submenu" href="jenis_peralatan.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Jenis Peralatan </span></a></li>
-								<li><a class="submenu" href="peminjam.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Peminjam </span></a></li>
+								<li><a class="submenu" href="inputperkakas.php"><i class="icon-wrench"></i><span class="hidden-tablet"> Perkakas </span></a></li>
+								<li><a class="submenu" href="inputkomponen.php"><i class="icon-cog"></i><span class="hidden-tablet"> Komponen </span></a></li>
+								<li><a class="submenu" href="inputbuku.php"><i class="icon-book"></i><span class="hidden-tablet"> Buku </span></a></li>
+								<li><a class="submenu" href="inputATK.php"><i class="icon-pencil"></i><span class="hidden-tablet"> Alat Tulis Kantor </span></a></li>
+								<li><a class="submenu" href="Peminjam.php"><i class="icon-user"></i><span class="hidden-tablet"> Peminjam </span></a></li>
 							</ul>	
 						</li>
-						<li>
-							<a class="dropmenu" href="#"><i class="icon-folder-close-alt"></i><span class="hidden-tablet"> Administrasi  </span></a>
+						<li><a class="dropmenu" href="#"><i class="icon-file"></i><span class="hidden-tablet">Laporan</span></a>
 							<ul>
-								<li><a class="submenu" href="role.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Role </span></a></li>
-								<li><a class="submenu" href="status.php"><i class="icon-file-alt"></i><span class="hidden-tablet"> Status </span></a></li>
+								<li><a class="submenu" href="lpraktikum1.php"><i class="icon-star"></i><span class="hidden-tablet"> Praktikum </span></a></li>
+								<li><a class="submenu" href="linventaris.php"><i class="icon-briefcase"></i><span class="hidden-tablet"> Inventaris </span></a></li>
+								<li><a class="submenu" href="lpeminjaman1.php"><i class="icon-user"></i><span class="hidden-tablet"> Peminjaman </span></a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="dropmenu" href="#"><i class="icon-user"></i><span class="hidden-tablet"> Pengurus  </span></a>
+							<ul>
+								<li><a class="submenu" href="aslab.php"><i class="icon-user"></i><span class="hidden-tablet"> Aslab </span></a></li>
+								<li><a class="submenu" href="kalab.php"><i class="icon-user"></i><span class="hidden-tablet"> Kalab </span></a></li>
 
 							</ul>	
 						</li>
@@ -178,17 +183,21 @@
 						<a href="#">Home</a> 
 						<i class="icon-angle-right"></i>
 					</li>
-					<li><a href="inputkomponen.php">Komponen</a>
+					<li>
+					<i class="icon-cog"></i>
+					<a href="inputkomponen.php">Komponen</a>
 					<i class="icon-angle-right"></i>
 					</li>
 					
-					<li><a href="#">Update Komponen</a></li>
+					<li>
+					<i class="icon-edit"></i>
+					<a href="#">Update Data Komponen</a></li>
 				</ul>
 
 				<!-- judul -->
 				<center>
-				<H1> Update Data</H1>
-				</center>
+				<H1> Update Data Komponen</H1>
+				</center><br>
 				<!-- akhir judul -->
 				 
 				<!-- tabel -->
@@ -207,27 +216,27 @@
 				</tr>
 				<tr>
 					<td> Nama</td>
-					<td><input type="text" name="nama" size="48" placeholder="Nama" value="<?php echo $nilai_update['peralatan_nama']; ?>"></td> 
+					<td><input type="text" name="nama" size="48" placeholder="Nama" value="<?php echo $nilai_update['peralatan_nama']; ?>" required></td> 
 				</tr>
 				<tr>
 					<td> Baik</td>
-					<td><input type="text" name="baik" size="48" placeholder="Baik" value="<?php echo $nilai_update['Baik']; ?>"></td> 
+					<td><input type="text" name="baik" size="48" placeholder="Baik" value="<?php echo $nilai_update['Baik']; ?>" required></td> 
 				</tr>
 				<tr>
 					<td> Rusak Ringan</td>
-					<td><input type="text" name="rusak_ringan" size="48" placeholder="Rusak Ringan" value="<?php echo $nilai_update['Rusak_ringan']; ?>"></td> 
+					<td><input type="text" name="rusak_ringan" size="48" placeholder="Rusak Ringan" value="<?php echo $nilai_update['Rusak_ringan']; ?>" required></td> 
 				</tr>
 				<tr>
 					<td> Rusak Berat</td>
-					<td><input type="text" name="rusak_berat" size="48" placeholder="Rusak Berat" value="<?php echo $nilai_update['Rusak_berat']; ?>"></td> 
+					<td><input type="text" name="rusak_berat" size="48" placeholder="Rusak Berat" value="<?php echo $nilai_update['Rusak_berat']; ?>"required></td> 
 				</tr>
 				
 				<tr>
                     <td> Total</td>
-                    <td><input type="text" name="total" size="48" placeholder="Total" value="<?php echo $nilai_update['total']; ?>"></td>
+                    <td><input type="text" name="total" size="48" placeholder="Total" value="<?php echo $nilai_update['total']; ?>" required></td>
 				</tr>
 				<tr>
-					<td><input type="submit" name="peralatan_idd" value="Update" class="btn btn-warning" align="left"></td>
+					<td><a href="inputkomponen.php"><button type="submit" name="peralatan_idd" class="btn btn-warning icon-edit" > Update</button></a></td>
 				</tr>
 				</table>
 				
